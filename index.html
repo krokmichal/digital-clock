@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page">
+        <nav>
+            <ul>
+                <li id="left"><a href="https://krokmichal.github.io/digital-clock/timer.io"><button>TIMER</button></a></li>
+                <li id="right"><a href="stopwatch.html"><button>STOPWATCH</button></a></li>
+            </ul>
+        </nav>
+        <div id="title">DIGITAL CLOCK</div>
+        <div id="current-region">WARSAW</div>
+        <div id="clock"></div>
+        <div id="date"></div>
+        <div id="weekday"></div>
+        <div id="regions">
+            <button id="london" type="submit" onclick="londonTimer()">LONDON</button>
+            <button id="warsaw" type="submit" onclick="warsawTimer()">WARSAW</button>
+            <button id="moscow" type="submit" onclick="moscowTimer()">MOSCOW</button>
+        </div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
